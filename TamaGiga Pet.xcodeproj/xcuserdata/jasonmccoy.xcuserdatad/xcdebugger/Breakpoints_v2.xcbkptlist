@@ -24,7 +24,7 @@
                   moduleName = "TamaGiga Pet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jasonmccoy/Documents/Xcode/TamaGiga-Pet/TamaGiga%20Pet/DragImg.swift"
-                  timestampString = "488349390.407364"
+                  timestampString = "488354353.844853"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -39,7 +39,7 @@
                   moduleName = "TamaGiga Pet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jasonmccoy/Documents/Xcode/TamaGiga-Pet/TamaGiga%20Pet/DragImg.swift"
-                  timestampString = "488349390.415917"
+                  timestampString = "488354353.857027"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -54,7 +54,7 @@
                   moduleName = "TamaGiga Pet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jasonmccoy/Documents/Xcode/TamaGiga-Pet/TamaGiga%20Pet/DragImg.swift"
-                  timestampString = "488349390.423475"
+                  timestampString = "488354353.871066"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -69,7 +69,7 @@
                   moduleName = "TamaGiga Pet"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jasonmccoy/Documents/Xcode/TamaGiga-Pet/TamaGiga%20Pet/DragImg.swift"
-                  timestampString = "488349390.429485"
+                  timestampString = "488354353.88584"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -77,6 +77,38 @@
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TamaGiga Pet/DragImg.swift"
+            timestampString = "488353751.824377"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "touchesEnded(_:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TamaGiga Pet/DragImg.swift"
+            timestampString = "488353758.762515"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "touchesEnded(_:with:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

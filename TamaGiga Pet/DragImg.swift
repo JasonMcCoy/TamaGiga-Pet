@@ -12,6 +12,7 @@ import UIKit
 class DragImg: UIImageView {
     
     var originalPosition: CGPoint!
+    var dropTarget: UIView?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,6 +34,14 @@ class DragImg: UIImageView {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        if let touch = touches.first, let target = dropTarget {
+            let position = touch.location(in: self.superview)
+            if target.frame.contains(position) {
+                NotificationCenter.default().post(NSNotification(name: "onTargetDropped" as NSNotification.Name, object: nil) as Notification)
+            }
+        }
+        
         self.center = originalPosition
     }
     

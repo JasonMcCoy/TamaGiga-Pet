@@ -54,7 +54,7 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="qT7-kC-JRY">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="qT7-kC-JRY" customClass="MonsterImg" customModule="TamaGiga_Pet" customModuleProvider="target">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="584" id="8kl-wJ-AOI"/>
                                     <constraint firstAttribute="height" constant="393" id="oNA-O5-V1Z"/>
