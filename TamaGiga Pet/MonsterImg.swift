@@ -21,31 +21,44 @@ class MonsterImg: UIImageView {
     }
     
     func playIdleAnimation() {
+        
         self.image = UIImage(named: "idle1.png")
         
         self.animationImages = nil
         
         var imgArray = [UIImage]()
+        for x in 1...4 {
+            let img = UIImage(named: "idle\(x).png")
+            imgArray.append(img!)
+            
+        }
+        
+        animateImages(array: imgArray, loop: 0)
+        
+    }
+    
+    func playDeathAnimation() {
+            
+        self.image = UIImage(named: "dead5.png")
+            
+        self.animationImages = nil
+            
+        var imgArray = [UIImage]()
         for x in 1...5 {
             let img = UIImage(named: "dead\(x).png")
             imgArray.append(img!)
+                
         }
+        
+        animateImages(array: imgArray, loop: 1)
+        
     }
     
-        func playDeathAnimation() {
-            self.image = UIImage(named: "dead5.png")
-            
-            self.animationImages = nil
-            
-            var imgArray = [UIImage]()
-            for x in 1...5 {
-                let img = UIImage(named: "dead\(x).png")
-                imgArray.append(img!)
-        }
-       
-        self.animationImages = imgArray
-        self.animationDuration = 0.8
-        self.animationRepeatCount = 1
+    func animateImages(array: [UIImage], loop: Int) {
+        
+        self.animationImages = array
+        self.animationDuration = 1.5
+        self.animationRepeatCount = loop
         self.startAnimating()
         
     }
