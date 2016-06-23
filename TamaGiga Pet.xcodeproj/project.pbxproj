@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13DE7EFC1D1B9992006FE3F9 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DE7EFB1D1B9992006FE3F9 /* DragImg.swift */; };
 		51189B6C1D18396C00D0ADF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189B6B1D18396C00D0ADF8 /* AppDelegate.swift */; };
 		51189B6E1D18396C00D0ADF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51189B6D1D18396C00D0ADF8 /* ViewController.swift */; };
 		51189B711D18396D00D0ADF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51189B6F1D18396D00D0ADF8 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13DE7EFB1D1B9992006FE3F9 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
 		51189B681D18396C00D0ADF8 /* TamaGiga Pet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TamaGiga Pet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51189B6B1D18396C00D0ADF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51189B6D1D18396C00D0ADF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				51189B6B1D18396C00D0ADF8 /* AppDelegate.swift */,
 				51189B6D1D18396C00D0ADF8 /* ViewController.swift */,
 				51189B6F1D18396D00D0ADF8 /* Main.storyboard */,
+				13DE7EFB1D1B9992006FE3F9 /* DragImg.swift */,
 				51189B721D18396D00D0ADF8 /* Assets.xcassets */,
 				51189B741D18396D00D0ADF8 /* LaunchScreen.storyboard */,
 				51189B771D18396D00D0ADF8 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13DE7EFC1D1B9992006FE3F9 /* DragImg.swift in Sources */,
 				51189B6E1D18396C00D0ADF8 /* ViewController.swift in Sources */,
 				51189B6C1D18396C00D0ADF8 /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +301,7 @@
 				51189B7C1D18396D00D0ADF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

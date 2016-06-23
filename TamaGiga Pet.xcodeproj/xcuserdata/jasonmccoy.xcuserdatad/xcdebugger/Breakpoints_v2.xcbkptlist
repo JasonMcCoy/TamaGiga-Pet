@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TamaGiga Pet/DragImg.swift"
+            timestampString = "488348052.265885"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1"
+            endingLineNumber = "1">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TamaGiga_Pet.DragImg.__allocating_init (image : Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; TamaGiga_Pet.DragImg"
+                  moduleName = "TamaGiga Pet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonmccoy/Documents/Xcode/TamaGiga-Pet/TamaGiga%20Pet/DragImg.swift"
+                  timestampString = "488349390.407364"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TamaGiga_Pet.DragImg.init (image : Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; TamaGiga_Pet.DragImg"
+                  moduleName = "TamaGiga Pet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonmccoy/Documents/Xcode/TamaGiga-Pet/TamaGiga%20Pet/DragImg.swift"
+                  timestampString = "488349390.415917"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TamaGiga_Pet.DragImg.__allocating_init (image : Swift.Optional&lt;__ObjC.UIImage&gt;, highlightedImage : Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; TamaGiga_Pet.DragImg"
+                  moduleName = "TamaGiga Pet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonmccoy/Documents/Xcode/TamaGiga-Pet/TamaGiga%20Pet/DragImg.swift"
+                  timestampString = "488349390.423475"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TamaGiga_Pet.DragImg.init (image : Swift.Optional&lt;__ObjC.UIImage&gt;, highlightedImage : Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; TamaGiga_Pet.DragImg"
+                  moduleName = "TamaGiga Pet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonmccoy/Documents/Xcode/TamaGiga-Pet/TamaGiga%20Pet/DragImg.swift"
+                  timestampString = "488349390.429485"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
