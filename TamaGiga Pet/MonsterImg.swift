@@ -57,7 +57,7 @@ class MonsterImg: UIImageView {
     func animateImages(array: [UIImage], loop: Int) {
         
         self.animationImages = array
-        self.animationDuration = 1.5
+        self.animationDuration = 1.2
         self.animationRepeatCount = loop
         self.startAnimating()
         

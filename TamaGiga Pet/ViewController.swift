@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -18,12 +19,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var penaltyThreeImg: UIImageView!
     
     
-    let DIM_ALPHA: CGFloat = 0.2
+    let DIM_ALPHA: CGFloat = 0.5
     let OPAQUE: CGFloat = 1.0
     let MAX_PENALTIES = 3
     
+    var musicPlayer: AVAudioPlayer!
+    var sfxBite: AVAudioPlayer!
+    var sfxHeart: AVAudioPlayer!
+    var sfxDeath: AVAudioPlayer!
+    var sfxSkull: AVAudioPlayer!
+    
     var penalties = 0
     var timer: Timer!
+    var monsterHappy = false
+    var currentItem: UInt32 = 0
 
     override func viewDidLoad() {
         
@@ -38,11 +47,41 @@ class ViewController: UIViewController {
         
         NotificationCenter.default().addObserver(self, selector: #selector(itemDroppedOnCharacter), name: "onTargetDropped", object: nil)
         
+        do {
+            let resourcePath = Bundle.main().pathForResource("cave-music", ofType: "mp3")
+            let url = NSURL (fileURLWithPath: resourcePath!)
+            try musicPlayer = AVAudioPlayer(contentsOf: url as URL)
+            
+            try sfxBite = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: Bundle.main().pathForResource("bite", ofType: "wav")!) as URL)
+            try sfxHeart = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: Bundle.main().pathForResource("heart", ofType: "wav")!) as URL)
+            try sfxDeath = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: Bundle.main().pathForResource("death", ofType: "wav")!) as URL)
+            try sfxSkull = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: Bundle.main().pathForResource("skull", ofType: "wav")!) as URL)
+            
+            musicPlayer.prepareToPlay()
+            musicPlayer.play()
+            
+            sfxBite.prepareToPlay()
+            sfxHeart.prepareToPlay()
+            sfxDeath.prepareToPlay()
+            sfxSkull.prepareToPlay()
+            
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
         startTimer()
         
     }
     
     func itemDroppedOnCharacter(notify: AnyObject) {
+        
+        monsterHappy = true
+        startTimer()
+        
+        foodImg.alpha = DIM_ALPHA
+        foodImg.isUserInteractionEnabled = false
+        heartImg.alpha = DIM_ALPHA
+        heartImg.isUserInteractionEnabled = false
         
     }
     
@@ -55,7 +94,8 @@ class ViewController: UIViewController {
     
     func changeGameState() {
         
-        penalties += 1
+        if !monsterHappy {
+                    penalties += 1
             
         if penalties == 1 {
             penaltyOneImg.alpha = OPAQUE
@@ -72,7 +112,28 @@ class ViewController: UIViewController {
         }
         if penalties >= MAX_PENALTIES {
             gameOver()
+            }
         }
+        
+        let rand = arc4random_uniform(2)
+        
+        if rand == 0 {
+            foodImg.alpha = DIM_ALPHA
+            foodImg.isUserInteractionEnabled = false
+            
+            heartImg.alpha = OPAQUE
+            heartImg.isUserInteractionEnabled = true
+        } else {
+            foodImg.alpha = OPAQUE
+            foodImg.isUserInteractionEnabled = true
+            
+            heartImg.alpha = DIM_ALPHA
+            heartImg.isUserInteractionEnabled = false
+        }
+        
+        currentItem = rand
+        monsterHappy = false
+
     }
     
     func gameOver() {
