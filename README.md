@@ -15,8 +15,3 @@ Here is a randomly chosen food that also has a nice sound effect to it as well!
 
 If you neglect your pet golem, this is what happens :'(
 ![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-26-at-12.28.20-AM.png)
-
-
-
-All Photo(s) by Jason McCoy / CC BY
-http://creativecommons.org/licenses/by/2.0/
